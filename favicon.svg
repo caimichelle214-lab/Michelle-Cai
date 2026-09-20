@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CM">
+  <rect width="64" height="64" rx="14" fill="#16233a"/>
+  <text x="32" y="41" font-family="Georgia, 'Times New Roman', serif" font-size="24"
+        font-weight="700" letter-spacing="1" text-anchor="middle" fill="#f3ead9">CM</text>
+  <rect x="14" y="48" width="36" height="2" rx="1" fill="#b08d57"/>
+</svg>

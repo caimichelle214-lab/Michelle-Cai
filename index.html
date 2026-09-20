@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页 · 蔡敏依</title>
+<meta name="description" content="蔡敏依的个人主页 — 上海交通大学外国语学院英语-法学双学位在读。Cai Minyi's personal website — English &amp; Law double degree at Shanghai Jiao Tong University.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  /* 尽早确定语言，避免英文用户先看到中文 / pick the language before first paint */
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      var l = q || localStorage.getItem('cm-lang');
+      if (!l) l = (navigator.language || 'zh').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+      if (l !== 'zh') document.documentElement.className += ' lang-en';
+    } catch (e) {}
+    setTimeout(function () {
+      document.documentElement.className =
+        document.documentElement.className.replace(/\blang-en\b/, '').replace(/\s+/g, ' ').trim();
+    }, 1800);
+  })();
+</script>
+</head>
+<body data-title-key="nav.home">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="monogram" data-i18n="site.monogram">CM</span>
+      <span>
+        <span data-i18n="site.name">蔡敏依</span>
+        <span class="brand-sub" data-i18n="site.role">Personal Site</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" data-i18n-aria="nav.menu" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav" data-i18n-aria="nav.menu">
+      <ul>
+        <li><a href="index.html" class="active" data-i18n="nav.home">首页</a></li>
+        <li><a href="education.html" data-i18n="nav.education">教育经历</a></li>
+        <li><a href="hobbies.html" data-i18n="nav.hobbies">个人爱好</a></li>
+        <li><a href="volunteer.html" data-i18n="nav.volunteer">志愿经历</a></li>
+        <li><a href="gallery.html" data-i18n="nav.gallery">图片展示</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" data-i18n-aria="lang.label">
+      <button type="button" data-lang-btn="zh" aria-pressed="true" data-i18n="lang.zh">中</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false" data-i18n="lang.en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ==================== 首屏 · 个人信息 ==================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="portrait fade-in">
+        <img src="assets/img/profile.jpg"
+             srcset="assets/img/profile-sm.jpg 400w, assets/img/profile.jpg 786w"
+             sizes="(max-width: 900px) 268px, 320px"
+             width="786" height="1100"
+             alt="蔡敏依证件照 / Portrait of Cai Minyi">
+      </div>
+
+      <div class="fade-in d1">
+        <p class="eyebrow" data-i18n="home.eyebrow">个人主页</p>
+        <h1>
+          <span data-i18n="site.name">蔡敏依</span>
+          <span class="name-en">Cai Minyi</span>
+        </h1>
+        <p class="lede" data-i18n="home.lede">上海交通大学外国语学院本科生，修读英语-法学双学位。关注语言、法律与跨文化交流。</p>
+
+        <ul class="tags">
+          <li data-i18n="home.tag1">英语-法学双学位</li>
+          <li data-i18n="home.tag2">雅思 7.5</li>
+          <li data-i18n="home.tag3">日语 N4</li>
+          <li data-i18n="home.tag4">志愿服务</li>
+        </ul>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="assets/files/volunteer-cv.docx" download data-i18n="home.btnCv">下载简历</a>
+          <a class="btn btn-ghost" href="mailto:michellecai@sjtu.edu.cn" data-i18n="home.btnContact">联系我</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 关于我 ==================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="home.aboutEyebrow">About</p>
+        <h2 data-i18n="home.aboutTitle">关于我</h2>
+        <div class="rule"></div>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3 data-i18n="home.aboutH1">语言与法律</h3>
+          <p data-i18n="home.aboutP1">我目前就读于上海交通大学外国语学院，修读英语-法学双学位。英语专业的训练为我打下了扎实的语言沟通基础，法学专业的学习则让我形成了严谨、准确的信息处理意识。</p>
+        </article>
+        <article class="card">
+          <h3 data-i18n="home.aboutH2">沟通与服务</h3>
+          <p data-i18n="home.aboutP2">我重视跨文化交流，曾与国际留学生共同参与城市定向活动，并参与多期 ESL 课程，习惯在多元文化环境中沟通协作。我也希望把语言能力、信息整合能力与组织协调能力，用在真正需要沟通与服务的场合。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 个人信息 ==================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="home.infoEyebrow">Profile</p>
+        <h2 data-i18n="home.infoTitle">个人信息</h2>
+        <div class="rule"></div>
+      </div>
+
+      <dl class="info-grid">
+        <div class="info-item">
+          <dt data-i18n="info.name">姓名</dt>
+          <dd data-i18n="info.nameVal">蔡敏依</dd>
+        </div>
+        <div class="info-item">
+          <dt data-i18n="info.school">学校</dt>
+          <dd data-i18n="info.schoolVal">上海交通大学</dd>
+        </div>
+        <div class="info-item">
+          <dt data-i18n="info.faculty">学院</dt>
+          <dd data-i18n="info.facultyVal">外国语学院</dd>
+        </div>
+        <div class="info-item">
+          <dt data-i18n="info.major">专业</dt>
+          <dd data-i18n="info.majorVal">英语-法学双学位</dd>
+        </div>
+        <div class="info-item">
+          <dt data-i18n="info.year">年级</dt>
+          <dd data-i18n="info.yearVal">大二在读</dd>
+        </div>
+        <div class="info-item">
+          <dt data-i18n="info.email">邮箱</dt>
+          <dd><a href="mailto:michellecai@sjtu.edu.cn">michellecai@sjtu.edu.cn</a></dd>
+        </div>
+        <div class="info-item">
+          <dt data-i18n="info.phone">手机</dt>
+          <dd><a href="tel:+8615121187038">151 2118 7038</a></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ==================== 继续浏览 ==================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="home.exploreEyebrow">Explore</p>
+        <h2 data-i18n="home.exploreTitle">继续浏览</h2>
+        <div class="rule"></div>
+      </div>
+
+      <div class="card-grid">
+        <a class="card link-card" href="education.html">
+          <h3 data-i18n="home.cardEduT">教育经历</h3>
+          <p data-i18n="home.cardEduD">就读院校、专业方向与学习历程。</p>
+        </a>
+        <a class="card link-card" href="hobbies.html">
+          <h3 data-i18n="home.cardHobT">个人爱好</h3>
+          <p data-i18n="home.cardHobD">课堂之外，我在意的事情与长期的兴趣。</p>
+        </a>
+        <a class="card link-card" href="volunteer.html">
+          <h3 data-i18n="home.cardVolT">志愿经历</h3>
+          <p data-i18n="home.cardVolD">语言能力、组织经验与志愿者自我陈述。</p>
+        </a>
+        <a class="card link-card" href="gallery.html">
+          <h3 data-i18n="home.cardGalT">图片展示</h3>
+          <p data-i18n="home.cardGalD">用照片记录校园、志愿活动与日常。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-name" data-i18n="site.name">蔡敏依</p>
+        <p data-i18n="footer.tagline">上海交通大学外国语学院 · 英语-法学双学位</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.linksTitle">快速链接</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="education.html" data-i18n="nav.education">教育经历</a></li>
+          <li><a href="hobbies.html" data-i18n="nav.hobbies">个人爱好</a></li>
+          <li><a href="volunteer.html" data-i18n="nav.volunteer">志愿经历</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">图片展示</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contactTitle">联系方式</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:michellecai@sjtu.edu.cn">michellecai@sjtu.edu.cn</a></li>
+          <li><a href="tel:+8615121187038">151 2118 7038</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-fine">© <span data-year>2025</span> <span data-i18n="site.name">蔡敏依</span> · <span data-i18n="footer.rights">保留所有权利</span> · <span data-i18n="footer.built">由 GitHub Pages 托管</span></p>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

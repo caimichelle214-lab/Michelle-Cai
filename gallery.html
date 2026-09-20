@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>图片展示 · 蔡敏依</title>
+<meta name="description" content="蔡敏依的图片展示 — 校园生活、志愿活动与跨文化交流。Photo gallery of Cai Minyi.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>
+  (function () {
+    try {
+      var q = new URLSearchParams(location.search).get('lang');
+      var l = q || localStorage.getItem('cm-lang');
+      if (!l) l = (navigator.language || 'zh').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en';
+      if (l !== 'zh') document.documentElement.className += ' lang-en';
+    } catch (e) {}
+    setTimeout(function () {
+      document.documentElement.className =
+        document.documentElement.className.replace(/\blang-en\b/, '').replace(/\s+/g, ' ').trim();
+    }, 1800);
+  })();
+</script>
+</head>
+<body data-title-key="nav.gallery">
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="monogram" data-i18n="site.monogram">CM</span>
+      <span>
+        <span data-i18n="site.name">蔡敏依</span>
+        <span class="brand-sub" data-i18n="site.role">Personal Site</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" data-i18n-aria="nav.menu" aria-label="打开菜单" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+    <nav class="nav" id="site-nav">
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="education.html" data-i18n="nav.education">教育经历</a></li>
+        <li><a href="hobbies.html" data-i18n="nav.hobbies">个人爱好</a></li>
+        <li><a href="volunteer.html" data-i18n="nav.volunteer">志愿经历</a></li>
+        <li><a href="gallery.html" class="active" data-i18n="nav.gallery">图片展示</a></li>
+      </ul>
+    </nav>
+    <div class="lang-switch" role="group" data-i18n-aria="lang.label">
+      <button type="button" data-lang-btn="zh" aria-pressed="true" data-i18n="lang.zh">中</button>
+      <button type="button" data-lang-btn="en" aria-pressed="false" data-i18n="lang.en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap fade-in">
+      <p class="eyebrow" data-i18n="gal.eyebrow">Gallery</p>
+      <h1 data-i18n="gal.title">图片展示</h1>
+      <p data-i18n="gal.lede">记录校园生活、志愿活动与跨文化交流的片段。点击图片可以放大查看。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="tbd-block fade-in d1" style="margin-bottom:34px">
+        <strong data-i18n="gal.noticeT">照片持续更新中</strong><br>
+        <span data-i18n="gal.noticeB">目前的图片为版式占位图，我会陆续替换成自己的照片。</span>
+      </div>
+
+      <!--
+        TODO（给她本人）：替换照片的方法
+        1) 把自己的照片放到 assets/img/gallery/ 目录下；
+        2) 把下面 <img> 的 src 改成你的文件名（例如 photo-1.jpg）；
+        3) 中文说明改 data-cap-zh / data-capsub-zh，英文说明改 data-cap-en / data-capsub-en。
+        要增加照片，复制一整段 <figure>…</figure> 即可。
+      -->
+      <div class="gallery fade-in d2">
+
+        <figure data-cap-zh="gal.c1" data-cap-en="gal.c1" data-capsub-zh="gal.c1s" data-capsub-en="gal.c1s">
+          <img src="assets/img/gallery/gallery-1.jpg" data-full="assets/img/gallery/gallery-1.jpg"
+               alt="校园活动照片 / Campus event photo" loading="lazy" width="1200" height="900">
+          <figcaption>
+            <span class="cap-main">校园活动</span>
+            <small class="cap-sub">示例图片 · 待替换</small>
+          </figcaption>
+        </figure>
+
+        <figure data-cap-zh="gal.c2" data-cap-en="gal.c2" data-capsub-zh="gal.c2s" data-capsub-en="gal.c2s">
+          <img src="assets/img/gallery/gallery-2.jpg" data-full="assets/img/gallery/gallery-2.jpg"
+               alt="志愿服务照片 / Volunteering photo" loading="lazy" width="1200" height="900">
+          <figcaption>
+            <span class="cap-main">志愿服务</span>
+            <small class="cap-sub">示例图片 · 待替换</small>
+          </figcaption>
+        </figure>
+
+        <figure data-cap-zh="gal.c3" data-cap-en="gal.c3" data-capsub-zh="gal.c3s" data-capsub-en="gal.c3s">
+          <img src="assets/img/gallery/gallery-3.jpg" data-full="assets/img/gallery/gallery-3.jpg"
+               alt="跨文化交流照片 / Cross-cultural exchange photo" loading="lazy" width="1200" height="900">
+          <figcaption>
+            <span class="cap-main">跨文化交流</span>
+            <small class="cap-sub">示例图片 · 待替换</small>
+          </figcaption>
+        </figure>
+
+        <figure data-cap-zh="gal.c4" data-cap-en="gal.c4" data-capsub-zh="gal.c4s" data-capsub-en="gal.c4s">
+          <img src="assets/img/gallery/gallery-4.jpg" data-full="assets/img/gallery/gallery-4.jpg"
+               alt="辩论比赛照片 / Debate competition photo" loading="lazy" width="1200" height="900">
+          <figcaption>
+            <span class="cap-main">辩论比赛</span>
+            <small class="cap-sub">示例图片 · 待替换</small>
+          </figcaption>
+        </figure>
+
+        <figure data-cap-zh="gal.c5" data-cap-en="gal.c5" data-capsub-zh="gal.c5s" data-capsub-en="gal.c5s">
+          <img src="assets/img/gallery/gallery-5.jpg" data-full="assets/img/gallery/gallery-5.jpg"
+               alt="日常照片 / Everyday moment photo" loading="lazy" width="1200" height="900">
+          <figcaption>
+            <span class="cap-main">日常片段</span>
+            <small class="cap-sub">示例图片 · 待替换</small>
+          </figcaption>
+        </figure>
+
+        <figure data-cap-zh="gal.c6" data-cap-en="gal.c6" data-capsub-zh="gal.c6s" data-capsub-en="gal.c6s">
+          <img src="assets/img/gallery/gallery-6.jpg" data-full="assets/img/gallery/gallery-6.jpg"
+               alt="城市与旅行照片 / City and travel photo" loading="lazy" width="1200" height="900">
+          <figcaption>
+            <span class="cap-main">城市与旅行</span>
+            <small class="cap-sub">示例图片 · 待替换</small>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <p class="footer-name" data-i18n="site.name">蔡敏依</p>
+        <p data-i18n="footer.tagline">上海交通大学外国语学院 · 英语-法学双学位</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.linksTitle">快速链接</h4>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+          <li><a href="education.html" data-i18n="nav.education">教育经历</a></li>
+          <li><a href="hobbies.html" data-i18n="nav.hobbies">个人爱好</a></li>
+          <li><a href="volunteer.html" data-i18n="nav.volunteer">志愿经历</a></li>
+          <li><a href="gallery.html" data-i18n="nav.gallery">图片展示</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contactTitle">联系方式</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:michellecai@sjtu.edu.cn">michellecai@sjtu.edu.cn</a></li>
+          <li><a href="tel:+8615121187038">151 2118 7038</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-fine">© <span data-year>2025</span> <span data-i18n="site.name">蔡敏依</span> · <span data-i18n="footer.rights">保留所有权利</span> · <span data-i18n="footer.built">由 GitHub Pages 托管</span></p>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
