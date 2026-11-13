@@ -1,0 +1,16 @@
+{
+  "name": "李杜 · 诗句互文",
+  "short_name": "李杜",
+  "description": "李白与杜甫 23,448 组诗句的数字人文阅读：相似度分布、互文网络、共用语汇与逐句细读。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#f5efe4",
+  "theme_color": "#f5efe4",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
