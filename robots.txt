@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-# 运行 tools/set_domain.py 后将自动写入 Sitemap 地址
